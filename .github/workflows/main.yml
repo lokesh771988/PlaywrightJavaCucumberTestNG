@@ -32,15 +32,11 @@ jobs:
       - name: Run Tests
         run: mvn test
 
-      - name: Copy report to docs
-        run: |
-          mkdir -p docs
-          cp target/cucumber-reports.html docs/
+      - name: Generate cucumber HTML report
+        run: mvn exec:java -Dexec.mainClass="your.package.name.CucumberReportGenerator"
 
-      - name: Commit HTML report
-        run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add docs/
-          git commit -m "Update HTML report [skip ci]" || echo "No changes to commit"
-          git push origin master
+      - name: Upload Cucumber HTML Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-html-report
+          path: target/cucumber-reports

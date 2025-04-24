@@ -29,6 +29,16 @@
         <artifactId>cucumber-testng</artifactId>
         <version>7.14.0</version>
     </dependency>
+	<dependency>
+  		<groupId>io.cucumber</groupId>
+  		<artifactId>cucumber-core</artifactId>
+  		<version>7.14.0</version>
+	</dependency>
+	<dependency>
+  <groupId>net.masterthought</groupId>
+  <artifactId>cucumber-reporting</artifactId>
+  <version>5.7.0</version>
+</dependency>
 
     <!-- TestNG -->
     <dependency>	
@@ -49,29 +59,7 @@
           <suiteXmlFile>testng.xml</suiteXmlFile>
         </suiteXmlFiles>
       </configuration>
-    </plugin>
-
-    <!-- Cucumber HTML Report Plugin -->
-    <plugin>
-      <groupId>net.masterthought</groupId>
-      <artifactId>cucumber-reporting</artifactId>
-      <version>5.7.0</version>
-      <executions>
-        <execution>
-          <id>generate-cucumber-html-report</id>
-          <phase>verify</phase>
-          <goals>
-            <goal>generate</goal>
-          </goals>
-          <configuration>
-            <projectName>Playwright Java Cucumber Test</projectName>
-            <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
-            <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
-          </configuration>
-        </execution>
-      </executions>
-    </plugin>
+    </plugin>
   </plugins>
 </build>
-
 </project>
