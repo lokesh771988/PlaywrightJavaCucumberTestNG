@@ -1,12 +1,12 @@
 name: Run Tests and Deploy Report
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
   push:
     branches: [ master ]
-  
-  permissions:
-    contents: write
 
 jobs:
   build:
@@ -52,4 +52,4 @@ jobs:
           git config --global user.email 'github-actions@github.com'
           git add docs/
           git commit -m "Update Cucumber HTML Report [skip ci]" || echo "No changes to commit"
-          git push origin master
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }} HEAD:master
