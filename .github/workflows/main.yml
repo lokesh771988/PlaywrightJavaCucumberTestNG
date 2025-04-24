@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches: [ master ]
+  
+  permissions:
+    contents: write
 
 jobs:
   build:
@@ -42,6 +45,8 @@ jobs:
           cp -r target/cucumber-reports/* docs/
 
       - name: Commit HTML report to repo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
