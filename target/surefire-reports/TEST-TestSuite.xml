@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="17.969" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\lokesh_gorantla\Documents\PlaywrightJava\PlaywrightJavaCucumberTestNG\target\test-classes;C:\Users\lokesh_gorantla\Documents\PlaywrightJava\PlaywrightJavaCucumberTestNG\target\classes;C:\Users\lokesh_gorantla\.m2\repository\com\microsoft\playwright\playwright\1.44.0\playwright-1.44.0.jar;C:\Users\lokesh_gorantla\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\lokesh_gorantla\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\lokesh_gorantla\.m2\repository\com\microsoft\playwright\driver\1.44.0\driver-1.44.0.jar;C:\Users\lokesh_gorantla\.m2\repository\com\microsoft\playwright\driver-bundle\1.44.0\driver-bundle-1.44.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\lokesh_gorantla\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\lokesh_gorantla\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\lokesh_gorantla\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\lokesh_gorantla\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
+    <property name="sun.java.command" value="C:\Users\lokesh_gorantla\AppData\Local\Temp\surefire10122549214577539266\surefirebooter-20250423163938187_3.jar C:\Users\lokesh_gorantla\AppData\Local\Temp\surefire10122549214577539266 2025-04-23T16-39-37_689-jvmRun1 surefire-20250423163938187_1tmp surefire_0-20250423163938187_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\lokesh_gorantla\Documents\PlaywrightJava\PlaywrightJavaCucumberTestNG\target\test-classes;C:\Users\lokesh_gorantla\Documents\PlaywrightJava\PlaywrightJavaCucumberTestNG\target\classes;C:\Users\lokesh_gorantla\.m2\repository\com\microsoft\playwright\playwright\1.44.0\playwright-1.44.0.jar;C:\Users\lokesh_gorantla\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\lokesh_gorantla\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\lokesh_gorantla\.m2\repository\com\microsoft\playwright\driver\1.44.0\driver-1.44.0.jar;C:\Users\lokesh_gorantla\.m2\repository\com\microsoft\playwright\driver-bundle\1.44.0\driver-bundle-1.44.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\lokesh_gorantla\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\lokesh_gorantla\.m2\repository\io\cucumber\cucumber-testng\7.14.0\cucumber-testng-7.14.0.jar;C:\Users\lokesh_gorantla\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\lokesh_gorantla\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\lokesh_gorantla\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\lokesh_gorantla\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\lokesh_gorantla"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\lokesh_gorantla\Documents\PlaywrightJava\PlaywrightJavaCucumberTestNG"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\lokesh_gorantla\AppData\Local\Temp\surefire10122549214577539266\surefirebooter-20250423163938187_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.18+9-LTS-195"/>
+    <property name="user.name" value="lokesh_gorantla"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\lokesh_gorantla\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\LOKESH~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.18"/>
+    <property name="cucumber.filter.tags" value="@smoke"/>
+    <property name="user.dir" value="C:\Users\lokesh_gorantla\Documents\PlaywrightJava\PlaywrightJavaCucumberTestNG"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\apache-maven-3.9.6\bin;C:\Users\lokesh_gorantla\AppData\Local\Programs\Python\Python36;C:\Users\lokesh_gorantla\AppData\Local\Programs\Python\Python36\Scripts;C:\gradle-8.1.1\bin;C:\Users\lokesh_gorantla\AppData\Local\Android\Sdk\build-tools;C:\Users\lokesh_gorantla\AppData\Local\Android\Sdk\platform-tools;C:\Users\lokesh_gorantla\AppData\Local\Android\Sdk\tools;C:\Program Files\Java\jdk-11\bin;C:\Users\lokesh_gorantla\AppData\Local\Programs\Python\Python311;C:\Users\lokesh_gorantla\AppData\Local\Programs\Python\Python311\Scripts;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\PowerShell\7\;C:\Users\lokesh_gorantla\scoop\shims;C:\Users\lokesh_gorantla\AppData\Local\Microsoft\WindowsApps;C:\Users\lokesh_gorantla\AppData\Roaming\npm;C:\Users\lokesh_gorantla\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.18+9-LTS-195"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;login with Data Table&quot;, &quot;login With Scenario Outlines&quot;](1)" classname="runners.TestRunner" time="15.732">
+    <system-out><![CDATA[
+@Regression @smoke
+Scenario: login with Data Table      # src/test/java/features/LoginScenarioOutline.feature:18
+  Given user lanches the application # stepdefinitions.LoginSteps.lanuchApp()
+  When user logs with credentials    # stepdefinitions.LoginSteps.user_logs_with_credentials(io.cucumber.datatable.DataTable)
+    | username | password |
+    | Admin    | admin123 |
+  Then user should see the dashboard # stepdefinitions.LoginSteps.verifyDashboard()
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+</testsuite>
