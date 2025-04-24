@@ -24,7 +24,8 @@ jobs:
         with:
           path: ~/.m2
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-maven-
+          restore-keys: |
+            ${{ runner.os }}-maven-
 
       - name: Install Maven dependencies
         run: mvn install -DskipTests
@@ -33,10 +34,17 @@ jobs:
         run: mvn test
 
       - name: Generate cucumber HTML report
-        run: mvn exec:java -Dexec.mainClass="your.package.name.CucumberReportGenerator"
+        run: mvn exec:java -Dexec.mainClass="runners.CucumberReportGenerator"
 
-      - name: Upload Cucumber HTML Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: cucumber-html-report
-          path: target/cucumber-reports
+      - name: Copy report to docs
+        run: |
+          mkdir -p docs
+          cp -r target/cucumber-reports/* docs/
+
+      - name: Commit HTML report to repo
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add docs/
+          git commit -m "Update Cucumber HTML Report [skip ci]" || echo "No changes to commit"
+          git push origin master
