@@ -1,9 +1,9 @@
 name: Run Tests and Deploy Report
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
-  workflow_dispatch:
 
 jobs:
   build:
@@ -20,20 +20,20 @@ jobs:
           java-version: '17'
 
       - name: Cache Maven packages
-      uses: actions/cache@v3
-      with:
-        path: ~/.m2
-        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-        restore-keys: ${{ runner.os }}-maven-
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-maven-
 
-    - name: Install Maven dependencies
-      run: mvn install -DskipTests
+      - name: Install Maven dependencies
+        run: mvn install -DskipTests
 
-    - name: Run Tests
-      run: mvn test
+      - name: Run Tests
+        run: mvn test
 
-    - name: Upload Cucumber Report
-      uses: actions/upload-artifact@v3
-      with:
-        name: cucumber-html-report
-        path: target/cucumber-reports.html
+      - name: Upload Cucumber Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cucumber-html-report
+          path: target/cucumber-reports.html
