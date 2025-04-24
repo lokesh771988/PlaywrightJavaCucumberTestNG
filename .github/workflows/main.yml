@@ -34,7 +34,7 @@ jobs:
         run: mvn test
 
       - name: Generate cucumber HTML report
-        run: mvn exec:java -Dexec.mainClass="runners.CucumberReportGenerator"
+        run: mvn exec:java -Dexec.mainClass="reportsGenerator.CucumberReportGenerator"
 
       - name: Copy report to docs
         run: |

@@ -1,4 +1,4 @@
-package runners;
+package reportsGenerator;
 
 import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
