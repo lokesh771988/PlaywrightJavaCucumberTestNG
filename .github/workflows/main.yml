@@ -19,18 +19,21 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Build and run tests
-        run: mvn clean test
+      - name: Cache Maven packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: ${{ runner.os }}-maven-
 
-      - name: Copy report to docs folder
-        run: |
-          mkdir -p docs
-          cp -r target/cucumber-reports.html docs/
+    - name: Install Maven dependencies
+      run: mvn install -DskipTests
 
-      - name: Commit report
-        run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add docs/
-          git commit -m "Update test report [skip ci]" || echo "No changes to commit"
-          git push origin main
+    - name: Run Tests
+      run: mvn test
+
+    - name: Upload Cucumber Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: cucumber-html-report
+        path: target/cucumber-reports.html
