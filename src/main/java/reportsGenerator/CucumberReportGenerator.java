@@ -9,6 +9,9 @@ import java.util.List;
 
 public class CucumberReportGenerator {
 
+	/*
+	 *This is generating report 
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		File reportOutputDirectory = new File("target/cucumber-reports");
